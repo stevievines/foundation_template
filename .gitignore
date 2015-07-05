@@ -5,13 +5,22 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore bundler config.
-/.bundle
-
-# Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
+.bundle
 
 # Ignore all logfiles and tempfiles.
-/log/*
-!/log/.keep
-/tmp
+log/*
+!log/.keep
+tmp
+
+# vim artifact
+*.swp
+*.swo
+
+# Mac finder artifacts
+.DS_Store
+
+# RVM ignore
+.rvmrc
+
+# Environment variables
+.env
