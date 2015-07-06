@@ -12,6 +12,8 @@
       <!-- Right Nav Section -->
         <ul class="right">
           <% if current_user.present? %>
+            <li><%= link_to 'Secrets', secrets_path %></li>
+            <li class="divider"</li>
             <li class="has-dropdown not-click">
               <%= link_to 'My Account', edit_user_registration_path %>
               <ul class="dropdown">
